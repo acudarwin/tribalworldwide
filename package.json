@@ -1,0 +1,23 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "prueba",
+  "main": "src/index.js",
+  "watch": {
+    "start": "src/*.js"
+  },
+  "scripts": {
+    "watch": "npm-watch start",
+    "start": "npx @google-cloud/functions-framework --target=cloud_function"
+  },
+  "author": "Darwin Acuña",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-watch": "^0.11.0"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "1.9.0",
+    "axios": "^0.27.1",
+    "qs": "^6.10.3"
+  }
+}

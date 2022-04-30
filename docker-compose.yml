@@ -1,0 +1,17 @@
+version: '3'
+services:
+  yaml-to-json:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${DOCKER_SERVICE_NAME}
+    volumes:        
+      - ./src:/app/src
+    ports:
+      - "${DOCKER_PORT}:8080"
+    networks:
+      - backend
+networks:
+  backend:
+    external:
+      name: prueba
